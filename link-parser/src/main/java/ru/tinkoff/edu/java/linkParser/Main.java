@@ -1,22 +1,30 @@
 package ru.tinkoff.edu.java.linkParser;
 
-import java.net.MalformedURLException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws MalformedURLException {
-
-
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите строку: ");
-        String url = in.nextLine();
-
+    public static void main(String[] args) {
         LinkParser githubParser = new GithubParser();
         LinkParser stackOverflowParser = new StackOverflowParser();
         githubParser.setNextParser(stackOverflowParser);
 
-        String[] result = githubParser.parse(url);
-        System.out.println(Arrays.toString(result));
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Введите ссылку или нажмите Enter для выхода:");
+            String link = scanner.nextLine().trim();
+
+            if (link.isEmpty()) {
+                break;
+            }
+
+            String[] result = githubParser.parse(link);
+
+            if (result != null) {
+                System.out.println("Результат парсинга: " + String.join("  ", result));
+            } else {
+                System.out.println("Ссылка не поддерживается");
+            }
+        }
     }
 }
