@@ -12,12 +12,6 @@
         <module name="bot" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="bot" target="17" />
-      <module name="link-parser" target="17" />
-      <module name="project" target="17" />
-      <module name="scrapper" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
