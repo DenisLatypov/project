@@ -1,11 +1,9 @@
 package ru.tinkoff.edu.java.scrapper.services.jdbc;
 
-import org.springframework.stereotype.Service;
 import ru.tinkoff.edu.java.scrapper.Model.Chat;
 import ru.tinkoff.edu.java.scrapper.repository.ChatJdbcRepository;
 import ru.tinkoff.edu.java.scrapper.services.ChatService;
 
-@Service
 public class JdbcChatService implements ChatService {
 
     private ChatJdbcRepository chatJdbcRepository;
