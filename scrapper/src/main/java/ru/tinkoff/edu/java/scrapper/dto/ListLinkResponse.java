@@ -1,4 +1,4 @@
-package ru.tinkoff.edu.java.scrapper.DTO;
+package ru.tinkoff.edu.java.scrapper.dto;
 
 import ru.tinkoff.edu.java.scrapper.Model.Link;
 

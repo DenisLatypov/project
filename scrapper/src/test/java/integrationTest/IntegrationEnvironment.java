@@ -1,4 +1,4 @@
-package IntegrationTest;
+package integrationTest;
 
 import liquibase.Contexts;
 import liquibase.LabelExpression;

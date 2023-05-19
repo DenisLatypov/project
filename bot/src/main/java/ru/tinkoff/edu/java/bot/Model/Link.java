@@ -1,11 +1,8 @@
 package ru.tinkoff.edu.java.bot.Model;
 
-
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
 import java.net.URI;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
@@ -18,5 +15,5 @@ public class Link {
         this.url = url;
     }
 
-    
+
 }

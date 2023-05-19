@@ -9,7 +9,7 @@ import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ru.tinkoff.edu.java.bot.DTO.LinkUpdate;
+import ru.tinkoff.edu.java.bot.dto.LinkUpdate;
 import ru.tinkoff.edu.java.bot.services.ListenerRabbit;
 import ru.tinkoff.edu.java.bot.services.UpdateService;
 

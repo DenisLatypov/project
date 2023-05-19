@@ -2,7 +2,7 @@ package ru.tinkoff.edu.java.bot.services;
 
 
 import org.springframework.stereotype.Service;
-import ru.tinkoff.edu.java.bot.DTO.LinkUpdate;
+import ru.tinkoff.edu.java.bot.dto.LinkUpdate;
 import ru.tinkoff.edu.java.bot.exceptions.ChatNotFoundException;
 import ru.tinkoff.edu.java.bot.exceptions.LinkNotFoundException;
 import ru.tinkoff.edu.java.bot.telegram.bot.Bot;

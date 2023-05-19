@@ -10,4 +10,5 @@ import ru.tinkoff.edu.java.scrapper.Model.Jpa.ChatJpa;
 public interface ChatJpaRepository extends JpaRepository<ChatJpa, Long> {
 
 
+    void add(ChatJpa chat);
 }
